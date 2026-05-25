@@ -10,8 +10,8 @@
   <meta property="og:url" content="https://samuelguevarasilva.github.io/web">
   <meta property="og:image" content="https://samuelguevarasilva.github.io/web/portrait.jpg">
   <meta property="og:image:alt" content="Samuel Guevara Silva, guitarrista clásico colombiano">
-  <meta property="og:image:width" content="1475">
-  <meta property="og:image:height" content="769">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="description" content="Samuel Guevara Silva, guitarrista clásico colombiano, estudiante de la Universidad Nacional de Colombia. Compositor y concertista.">
   <meta name="keywords" content="Samuel Guevara Silva, guitarrista colombiano, guitarra clásica, FestiU, Universidad de los Andes, La Cajita, música clásica">
   <meta name="author" content="Samuel Guevara Silva">
@@ -481,8 +481,14 @@ section {
   align-items: start;
 }
 
+.bio-grid > * {
+  min-width: 0;
+}
+
 .portrait-section {
   position: relative;
+  max-width: 100%;
+  min-width: 0;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -495,15 +501,21 @@ section {
 
 .portrait-frame {
   position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   background: linear-gradient(135deg, #1a2837, #0d1420);
 }
 
 .portrait-img {
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
+  object-position: center top;
   filter: sepia(0.25) contrast(1.1) brightness(0.88);
   transition: filter 0.6s ease;
 }
@@ -746,11 +758,21 @@ section {
 
 .gallery-item {
   flex: 0 0 calc(40% - 1rem);
+  max-width: min(420px, 40vw);
   aspect-ratio: 3 / 4;
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #1a2837, #0d1420);
-  group: 'img';
+}
+
+.gallery-item > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gallery-placeholder {
@@ -845,6 +867,13 @@ section {
 }
 
 .spotify-icon-img {
+  flex-shrink: 0;
+}
+
+.spotify-link img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -1317,6 +1346,11 @@ footer {
   
   .gallery-item {
     flex: 0 0 calc(80% - 0.5rem);
+    max-width: 85vw;
+  }
+
+  .portrait-frame {
+    max-width: 100%;
   }
   
   .video-card {
@@ -1349,12 +1383,8 @@ footer {
 
 
 .gallery-item {
-  contain: layout style;
+  contain: layout style paint;
 }
-.portrait-img {
-  will-change: transform;
-}
-
 
 html {
   scroll-behavior: smooth;
@@ -1363,8 +1393,17 @@ html {
   will-change: transform;
   transform: translateZ(0);
 }
-img {
+#biography img,
+#gallery img {
   decoding: async;
+}
+
+/* Atributos width/height solo definen proporción; el tamaño visible lo controla el CSS */
+#biography .portrait-img,
+#gallery .gallery-item > img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
 }
 
 
@@ -1540,7 +1579,7 @@ img {
       <!-- Portrait -->
       <div class="portrait-section">
         <div class="portrait-frame">
-          <img src="samuel-guevara-silva-biografia.jpg" alt="Samuel Guevara Silva, guitarrista clásico colombiano — retrato de biografía" width="1475" height="769" decoding="async" loading="eager" fetchpriority="high" class="portrait-img">
+          <img src="samuel-guevara-silva-biografia.jpg" alt="Samuel Guevara Silva, guitarrista clásico colombiano — retrato de biografía" width="380" height="507" decoding="async" loading="eager" fetchpriority="high" class="portrait-img">
           <div class="corner-mark corner-tl"></div>
           <div class="corner-mark corner-tr"></div>
           <div class="corner-mark corner-bl"></div>
@@ -1626,21 +1665,21 @@ img {
       <div class="carousel-track" id="gallery-carousel" style="gap:1.2rem;">
         
         <div class="gallery-item">
-          <img src="galeria-la-cajita-universidad-andes-2025.jpg" alt="Samuel Guevara Silva en concierto La Cajita, Universidad de los Andes 2025" width="1080" height="769" decoding="async" loading="lazy">
+          <img src="galeria-la-cajita-universidad-andes-2025.jpg" alt="Samuel Guevara Silva en concierto La Cajita, Universidad de los Andes 2025" width="360" height="480" decoding="async" loading="lazy">
           <div class="gallery-overlay">
             <p class="gallery-label" data-t="gal1">La Cajita · Universidad de los Andes 2025</p>
           </div>
         </div>
         
         <div class="gallery-item">
-          <img src="galeria-fotografia-artistica-1.png" alt="Samuel Guevara Silva — fotografía artística 2024" width="662" height="828" decoding="async" loading="lazy">
+          <img src="galeria-fotografia-artistica-1.png" alt="Samuel Guevara Silva — fotografía artística 2024" width="360" height="480" decoding="async" loading="lazy">
           <div class="gallery-overlay">
             <p class="gallery-label" data-t="gal2">Fotografía artística · 2024</p>
           </div>
         </div>
         
         <div class="gallery-item">
-          <img src="galeria-fotografia-artistica-2.png" alt="Samuel Guevara Silva — fotografía artística en estudio 2024" width="662" height="828" decoding="async" loading="lazy">
+          <img src="galeria-fotografia-artistica-2.png" alt="Samuel Guevara Silva — fotografía artística en estudio 2024" width="360" height="480" decoding="async" loading="lazy">
           <div class="gallery-overlay">
             <p class="gallery-label" data-t="gal3">Fotografía artística · 2024</p>
           </div>
