@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://samuelguevarasilva.com/</loc>
+    <loc>https://samuelguevarasilva.github.io/web/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://samuelguevarasilva.com/samuel-guevara-silva-biografia.jpg</image:loc>
+      <image:loc>https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg</image:loc>
       <image:title>Samuel Guevara Silva — retrato biografía</image:title>
       <image:caption>Retrato de Samuel Guevara Silva, guitarrista clásico colombiano.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://samuelguevarasilva.com/portrait.jpg</image:loc>
+      <image:loc>https://samuelguevarasilva.github.io/web/portrait.jpg</image:loc>
       <image:title>Samuel Guevara Silva — retrato oficial</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://samuelguevarasilva.com/galeria-la-cajita-universidad-andes-2025.jpg</image:loc>
+      <image:loc>https://samuelguevarasilva.github.io/web/galeria-la-cajita-universidad-andes-2025.jpg</image:loc>
       <image:title>La Cajita · Universidad de los Andes 2025</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://samuelguevarasilva.com/galeria-fotografia-artistica-1.png</image:loc>
+      <image:loc>https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-1.png</image:loc>
       <image:title>Fotografía artística · 2024</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://samuelguevarasilva.com/galeria-fotografia-artistica-2.png</image:loc>
+      <image:loc>https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-2.png</image:loc>
       <image:title>Fotografía artística · 2024</image:title>
     </image:image>
   </url>
