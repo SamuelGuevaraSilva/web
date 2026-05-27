@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Samuel Guevara Silva — Guitarrista Clásico | Guitarra Clásica Colombia</title>
+<meta name="description" content="Sitio oficial de Samuel Guevara Silva, guitarrista clásico colombiano. Biografía, obras, conciertos, galería y videos. Ganador FestiU 2025, Universidad Nacional de Colombia.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+<meta name="application-name" content="Samuel Guevara Silva">
+<meta itemprop="name" content="Samuel Guevara Silva — Guitarra Clásica">
+<link rel="image_src" href="https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta property="og:site_name" content="Samuel Guevara Silva — Guitarra Clásica">
+  <meta property="og:title" content="Samuel Guevara Silva — Guitarrista Clásico Colombiano">
+  <meta property="og:description" content="Sitio oficial de Samuel Guevara Silva, guitarrista clásico colombiano. Biografía, obras, conciertos y galería.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://samuelguevarasilva.github.io/web/">
+  <meta property="og:image" content="https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg">
+  <meta property="og:image:alt" content="Samuel Guevara Silva, guitarrista clásico colombiano">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="keywords" content="Samuel Guevara Silva, guitarrista colombiano, guitarra clásica, FestiU, Universidad de los Andes, La Cajita, música clásica">
+  <meta name="author" content="Samuel Guevara Silva">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Samuel Guevara Silva — Guitarrista Clásico Colombiano">
+  <meta name="twitter:description" content="Samuel Guevara Silva, guitarrista clásico colombiano, estudiante de la Universidad Nacional de Colombia. Compositor y concertista.">
+  <meta name="twitter:image" content="https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg">
+    <link rel="preload" as="image" href="samuel-guevara-silva-biografia.jpg" fetchpriority="high">
+  <link rel="canonical" href="https://samuelguevarasilva.github.io/web/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://samuelguevarasilva.github.io/web/sitemap.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon-sgs.svg">
+<link rel="shortcut icon" type="image/svg+xml" href="favicon-sgs.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ─── PALETTE CREPUSCULAR ─── */
+:root {
+  --sky-dusk:     #3d5a7a;
+  --sky-twilight: #4a6f8f;
+  --blue-deep:    #1a2837;
+  --blue-night:   #0d1420;
+  --amber-hr:     #d4a574;
+  --amber-soft:   #e8b899;
+  --amber-muted:  #8b6f47;
+  --cream-film:   #e8ddd2;
+  --cream-warm:   #cfc4b6;
+  --text-body:    #a89880;
+  --text-dim:     #6b6158;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  background: linear-gradient(145deg, #0a1018 0%, #141e2e 30%, #1a2837 60%, #0d1420 100%);
+  background-attachment: fixed;
+  color: var(--cream-film);
+  font-family: 'Lora', Georgia, serif;
+  overflow-x: hidden;
+  cursor: none;
+  line-height: 1.6;
+}
+
+/* ─── FILM GRAIN OVERLAY ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='fg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23fg)' opacity='0.08'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* ─── CUSTOM CURSOR ─── */
+.cursor {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(212, 165, 116, 0.65);
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  box-shadow: 0 0 12px rgba(212, 165, 116, 0.3);
+}
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
+.cursor.active {
+  width: 40px;
+  height: 40px;
+  background: rgba(212, 165, 116, 0.12);
+  box-shadow: 0 0 20px rgba(212, 165, 116, 0.2);
+}
+
+/* ─── NAVIGATION ─── */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 4rem;
+  background: transparent;
+  transition: background 0.5s ease, padding 0.4s ease, border-bottom 0.4s ease;
+}
+
+nav.scrolled {
+  background: rgba(10, 16, 24, 0.88);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+  padding: 1rem 4rem;
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--cream-film);
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.nav-brand:hover {
+  opacity: 1;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.8rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--amber-hr);
+  transition: width 0.4s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--amber-soft);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.lang-btn {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: none;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  color: var(--amber-soft);
+  text-shadow: 0 0 6px rgba(232, 184, 153, 0.3);
+}
+
+/* ─── HERO SECTION ─── */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 60% at 50% 50%, 
+      rgba(74, 111, 143, 0.08) 0%, 
+      transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 20%, 
+      rgba(212, 165, 116, 0.05) 0%, 
+      transparent 60%),
+    linear-gradient(180deg, 
+      #0a1018 0%, 
+      #141e2e 40%, 
+      #1a2837 70%, 
+      #0d1420 100%);
+  z-index: 0;
+}
+
+/* Subtle light leak from bottom */
+.hero-glow {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: radial-gradient(ellipse 60% 100% at 50% 100%,
+    rgba(212, 165, 116, 0.08) 0%,
+    transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+}
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(232, 189, 153, 0.4);
+  border-radius: 50%;
+  animation: drift var(--duration, 8s) linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(var(--drift, 0));
+    opacity: 0;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  animation: heroFade 1.2s ease 0.3s both;
+}
+
+.hero-tag {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  color: var(--sky-twilight);
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 12vw, 9rem);
+  line-height: 0.95;
+  color: var(--cream-film);
+  letter-spacing: -0.01em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.hero-title i {
+  font-style: italic;
+  color: var(--amber-soft);
+  display: block;
+  font-weight: 400;
+}
+
+.hero-divider {
+  width: 1px;
+  height: 70px;
+  background: linear-gradient(to bottom, 
+    var(--amber-hr), 
+    rgba(212, 165, 116, 0.3));
+  margin: 3rem auto;
+  opacity: 0;
+  animation: fadeIn 0.8s ease 0.8s both;
+}
+
+.hero-quote {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--text-body);
+  max-width: 500px;
+  line-height: 1.8;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 0.8s ease 1s both;
+}
+
+.scroll-prompt {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease 1.3s both;
+}
+
+.scroll-text {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, 
+    var(--amber-muted), 
+    transparent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; transform: scaleY(0.5); }
+  50% { opacity: 1; transform: scaleY(1); }
+  100% { opacity: 0.3; transform: scaleY(0.5); }
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ─── SECTIONS SHARED ─── */
+section {
+  position: relative;
+  z-index: 2;
+  padding: 8rem 0;
+}
+
+.section-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 3.5rem;
+}
+
+.section-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.6rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--amber-muted);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-label.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section-label::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--amber-muted);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  color: var(--cream-film);
+  margin-bottom: 3.5rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease 0.15s, transform 0.8s ease 0.15s;
+}
+
+.section-title.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section-title i {
+  font-style: italic;
+  color: var(--amber-soft);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right,
+    transparent,
+    rgba(212, 165, 116, 0.2) 20%,
+    rgba(212, 165, 116, 0.2) 80%,
+    transparent);
+  margin: 4rem 0;
+}
+
+/* ─── BIOGRAPHY SECTION ─── */
+#biography {
+  background: linear-gradient(180deg, 
+    #0d1420 0%, 
+    #141e2e 50%, 
+    #1a2837 100%);
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.45fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.bio-grid > * {
+  min-width: 0;
+}
+
+.portrait-section {
+  position: relative;
+  max-width: 100%;
+  min-width: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.portrait-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a2837, #0d1420);
+}
+
+.portrait-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: sepia(0.25) contrast(1.1) brightness(0.88);
+  transition: filter 0.6s ease;
+}
+
+.portrait-frame:hover .portrait-img {
+  filter: sepia(0.1) contrast(1.08) brightness(0.95);
+}
+
+/* Vignette effect */
+.portrait-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+    transparent 30%,
+    rgba(13, 20, 32, 0.5) 80%,
+    rgba(13, 20, 32, 0.8) 100%);
+  pointer-events: none;
+}
+
+/* Film frame corners */
+.corner-mark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: var(--amber-muted);
+  z-index: 2;
+}
+
+.corner-tl { top: 8px; left: 8px; border-top: 1.5px solid; border-left: 1.5px solid; }
+.corner-tr { top: 8px; right: 8px; border-top: 1.5px solid; border-right: 1.5px solid; }
+.corner-bl { bottom: 8px; left: 8px; border-bottom: 1.5px solid; border-left: 1.5px solid; }
+.corner-br { bottom: 8px; right: 8px; border-bottom: 1.5px solid; border-right: 1.5px solid; }
+
+.portrait-credit {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.bio-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease 0.1s, transform 0.8s ease 0.1s;
+}
+
+.bio-content.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.bio-text p {
+  font-size: 1.08rem;
+  line-height: 2;
+  color: var(--text-body);
+  margin-bottom: 1.6rem;
+}
+
+.bio-text p:first-of-type::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.1em;
+  margin-top: 0.1em;
+  color: var(--amber-soft);
+}
+
+.bio-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(212, 165, 116, 0.15);
+}
+
+.stat-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--amber-muted);
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  color: var(--cream-warm);
+  font-weight: 500;
+}
+
+/* ─── CAROUSEL BASE ─── */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  background: transparent;
+  color: var(--cream-warm);
+  font-size: 1rem;
+  cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--amber-hr);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.carousel-btn:hover {
+  border-color: var(--amber-hr);
+  color: var(--blue-night);
+}
+
+.carousel-btn:hover::before {
+  transform: scaleX(1);
+}
+
+/* ─── WORKS SECTION ─── */
+#works {
+  background: #0a1018;
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.work-card {
+  flex: 0 0 calc(33.333% - 1.35rem);
+  background: rgba(26, 40, 55, 0.5);
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  padding: 2.2rem 2rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+}
+
+.work-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right,
+    transparent,
+    var(--amber-soft),
+    transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-card:hover {
+  border-color: rgba(212, 165, 116, 0.35);
+  transform: translateY(-5px);
+  background: rgba(26, 40, 55, 0.7);
+}
+
+.work-card:hover::before {
+  opacity: 1;
+}
+
+.work-number {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.52rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--amber-muted);
+  margin-bottom: 1.4rem;
+}
+
+.work-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: var(--cream-film);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.work-composer {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--sky-twilight);
+  margin-bottom: 1.2rem;
+  opacity: 0.85;
+}
+
+.work-description {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+/* ─── GALLERY SECTION ─── */
+#gallery {
+  background: linear-gradient(180deg,
+    #141e2e 0%,
+    #1a2837 100%);
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.gallery-item {
+  flex: 0 0 calc(40% - 1rem);
+  max-width: min(420px, 40vw);
+  aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a2837, #0d1420);
+}
+
+.gallery-item > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: rgba(212, 165, 116, 0.08);
+  background: linear-gradient(135deg, #1a2837, #141e2e);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(13, 20, 32, 0.8) 0%,
+    transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-label {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--cream-film);
+  transform: translateY(8px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.gallery-item:hover .gallery-label {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── INTERPRETATIONS SECTION ─── */
+#interpretations {
+  background: #0a1018;
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.interp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.spotify-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1.4rem;
+  border: 1px solid rgba(30, 215, 96, 0.35);
+  background: transparent;
+  color: #1ed760;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: none;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+}
+
+.spotify-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 215, 96, 0.1);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.spotify-link:hover::before {
+  transform: scaleX(1);
+}
+
+.spotify-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+}
+
+.spotify-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.spotify-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .interp-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .spotify-link {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    gap: 0.75rem;
+  }
+
+  .spotify-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.video-card {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.carousel-wrapper--single .carousel-controls {
+  display: none;
+}
+
+.carousel-wrapper--single .video-card {
+  flex: 0 0 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+}
+
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #141e2e;
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-details {
+  padding: 1.2rem 0;
+}
+
+.video-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--cream-film);
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+}
+
+.video-date {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* ─── EVENTS SECTION ─── */
+#events {
+  background: linear-gradient(180deg,
+    #0d1420 0%,
+    #1a2837 100%);
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.events-list {
+  border-top: 1px solid rgba(212, 165, 116, 0.15);
+}
+
+.event-row {
+  display: grid;
+  grid-template-columns: 85px 1fr 1fr auto;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+  position: relative;
+  transition: background 0.35s ease;
+}
+
+.event-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: rgba(212, 165, 116, 0.05);
+  transition: width 0.45s ease;
+  z-index: -1;
+}
+
+.event-row:hover::before {
+  width: 100%;
+}
+
+.event-day {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: var(--amber-hr);
+  line-height: 0.9;
+  font-weight: 400;
+}
+
+.event-month {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.52rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 0.3rem;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--cream-film);
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+}
+
+.event-venue {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.event-location {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.event-link {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  color: var(--amber-soft);
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--amber-hr);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.event-link:hover {
+  color: var(--blue-night);
+  border-color: var(--amber-hr);
+}
+
+.event-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* ─── CONTACT SECTION ─── */
+#contact {
+  background: #0a1018;
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5.5rem;
+  align-items: start;
+}
+
+.contact-intro {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--text-body);
+  line-height: 1.85;
+  margin-bottom: 3rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.contact-item-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--amber-muted);
+  margin-bottom: 0.4rem;
+}
+
+.contact-item-value {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: var(--cream-film);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item-value:hover {
+  color: var(--amber-soft);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  background: rgba(26, 40, 55, 0.6);
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  color: var(--cream-film);
+  padding: 0.9rem 1.1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  outline: none;
+  cursor: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-group select option {
+  background: #141e2e;
+  color: var(--cream-film);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: rgba(212, 165, 116, 0.4);
+  background: rgba(26, 40, 55, 0.8);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 2.5rem;
+  border: 1px solid var(--amber-muted);
+  background: transparent;
+  color: var(--amber-soft);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  cursor: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.35s ease;
+  align-self: flex-start;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--amber-hr);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.submit-btn:hover {
+  color: var(--blue-night);
+  border-color: var(--amber-hr);
+}
+
+.submit-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.submit-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: rgba(10, 16, 24, 0.95);
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+  padding: 3.5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--cream-film);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  font-weight: 400;
+}
+
+.footer-brand:hover {
+  opacity: 1;
+}
+
+.footer-credit {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.58rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--amber-soft);
+}
+
+/* ─── SPOTIFY MODAL ─── */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 800;
+  background: rgba(10, 16, 24, 0.92);
+  backdrop-filter: blur(12px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-backdrop.active {
+  display: flex;
+}
+
+.modal-box {
+  background: linear-gradient(135deg, #141e2e, #1a2837);
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  padding: 3rem;
+  max-width: 620px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: none;
+  transition: color 0.25s ease;
+}
+
+.modal-close-btn:hover {
+  color: var(--amber-soft);
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--cream-film);
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+
+.modal-subtitle {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {  
+  .carousel-controls {
+    display: none;
+  }
+  nav {
+    padding: 1.2rem 2rem;
+  }
+  
+  nav.scrolled {
+    padding: 0.8rem 2rem;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .bio-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .work-card {
+    flex: 0 0 100%;
+  }
+  
+  .gallery-item {
+    flex: 0 0 calc(80% - 0.5rem);
+    max-width: 85vw;
+  }
+
+  .portrait-frame {
+    max-width: 100%;
+  }
+  
+  .video-card {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .carousel-track {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-item,
+  .work-card,
+  .video-card {
+    scroll-snap-align: start;
+  }
+  
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .event-row {
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+  }
+  
+  .event-location,
+  .event-link {
+    display: none;
+  }
+  
+  .section-container {
+    padding: 0 2rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.8rem, 10vw, 6rem);
+  }
+}
+
+
+.gallery-item {
+  contain: layout style paint;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.gallery-track, .carousel-track {
+  will-change: transform;
+  transform: translateZ(0);
+}
+#biography img,
+#gallery img {
+  decoding: async;
+}
+
+/* Atributos width/height solo definen proporción; el tamaño visible lo controla el CSS */
+#biography .portrait-img,
+#gallery .gallery-item > img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+}
+
+
+.hero-cite {
+  display: block;
+  font-size: 0.7em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: var(--amber-muted);
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://samuelguevarasilva.github.io/web/#website",
+      "url": "https://samuelguevarasilva.github.io/web/",
+      "name": "Samuel Guevara Silva — Guitarra Clásica",
+      "alternateName": "Samuel Guevara Silva",
+      "description": "Sitio oficial del guitarrista clásico colombiano Samuel Guevara Silva. Biografía, obras originales, conciertos, galería fotográfica e interpretaciones en video.",
+      "inLanguage": ["es", "en", "fr", "zh"],
+      "publisher": { "@id": "https://samuelguevarasilva.github.io/web/#person" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://samuelguevarasilva.github.io/web/#webpage",
+      "url": "https://samuelguevarasilva.github.io/web/",
+      "name": "Samuel Guevara Silva — Guitarrista Clásico Colombiano",
+      "description": "Samuel Guevara Silva, guitarrista clásico colombiano, compositor y concertista. Ganador FestiU 2025.",
+      "isPartOf": { "@id": "https://samuelguevarasilva.github.io/web/#website" },
+      "about": { "@id": "https://samuelguevarasilva.github.io/web/#person" },
+      "primaryImageOfPage": { "@id": "https://samuelguevarasilva.github.io/web/#image-biografia" },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://samuelguevarasilva.github.io/web/#person",
+      "name": "Samuel Guevara Silva",
+      "description": "Guitarrista clásico colombiano, compositor y estudiante de la Universidad Nacional de Colombia.",
+      "url": "https://samuelguevarasilva.github.io/web",
+      "image": [
+        "https://samuelguevarasilva.github.io/web/portrait.jpg",
+        "https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg",
+        "https://samuelguevarasilva.github.io/web/galeria-la-cajita-universidad-andes-2025.jpg",
+        "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-1.png",
+        "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-2.png"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/samuel.guevara.silva/",
+        "https://www.youtube.com/@SamuelGS-v2b"
+      ],
+      "jobTitle": "Guitarrista Clásico",
+      "nationality": {
+        "@type": "Country",
+        "name": "Colombia"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Nacional de Colombia"
+      },
+      "award": "Ganador FestiU 2025",
+      "knowsAbout": [
+        "Guitarra clásica",
+        "Música clásica colombiana",
+        "Compositor"
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://samuelguevarasilva.github.io/web/#image-biografia",
+      "contentUrl": "https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg",
+      "url": "https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg",
+      "name": "Samuel Guevara Silva — retrato biografía",
+      "description": "Retrato de Samuel Guevara Silva, guitarrista clásico colombiano, para la sección de biografía.",
+      "width": 1475,
+      "height": 769,
+      "encodingFormat": "image/jpeg",
+      "representativeOfPage": true,
+      "about": {
+        "@id": "https://samuelguevarasilva.github.io/web/#person"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://samuelguevarasilva.github.io/web/#image-cajita",
+      "contentUrl": "https://samuelguevarasilva.github.io/web/galeria-la-cajita-universidad-andes-2025.jpg",
+      "url": "https://samuelguevarasilva.github.io/web/galeria-la-cajita-universidad-andes-2025.jpg",
+      "name": "Samuel Guevara Silva — La Cajita Universidad de los Andes 2025",
+      "width": 1080,
+      "height": 769,
+      "encodingFormat": "image/jpeg",
+      "about": {
+        "@id": "https://samuelguevarasilva.github.io/web/#person"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://samuelguevarasilva.github.io/web/#image-artistica-1",
+      "contentUrl": "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-1.png",
+      "url": "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-1.png",
+      "name": "Samuel Guevara Silva — fotografía artística 2024",
+      "width": 662,
+      "height": 828,
+      "encodingFormat": "image/png",
+      "about": {
+        "@id": "https://samuelguevarasilva.github.io/web/#person"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://samuelguevarasilva.github.io/web/#image-artistica-2",
+      "contentUrl": "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-2.png",
+      "url": "https://samuelguevarasilva.github.io/web/galeria-fotografia-artistica-2.png",
+      "name": "Samuel Guevara Silva — fotografía artística 2024 (2)",
+      "width": 662,
+      "height": 828,
+      "encodingFormat": "image/png",
+      "about": {
+        "@id": "https://samuelguevarasilva.github.io/web/#person"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://samuelguevarasilva.github.io/web/#video-para-emmie",
+      "name": "Para Emmie — Samuel Guevara Silva",
+      "description": "Interpretación de Para Emmie por Samuel Guevara Silva en Cajicá, Colombia, 2025.",
+      "thumbnailUrl": "https://samuelguevarasilva.github.io/web/samuel-guevara-silva-biografia.jpg",
+      "uploadDate": "2025",
+      "contentUrl": "https://www.youtube.com/watch?v=tJBty2QXm_w",
+      "embedUrl": "https://www.youtube.com/embed/tJBty2QXm_w",
+      "publisher": { "@id": "https://samuelguevarasilva.github.io/web/#person" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-brand">Samuel Guevara Silva</a>
+  <ul class="nav-menu">
+    <li><a href="#biography">Biografía</a></li>
+    <li><a href="#works">Obras</a></li>
+    <li><a href="#gallery">Galería</a></li>
+    <li><a href="#interpretations">Interpretaciones</a></li>
+    <li><a href="#events">Apariciones</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('es')">ES</button>
+    <button class="lang-btn" onclick="switchLang('en')">EN</button>
+    <button class="lang-btn" onclick="switchLang('fr')">FR</button>
+    <button class="lang-btn" onclick="switchLang('zh')">中</button>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-particles" id="particles"></div>
+  
+  <div class="hero-content">
+    <p class="hero-tag" data-t="hero-tag">Guitarra Clásica · Colombia</p>
+    <h1 class="hero-title">
+      Samuel<br><i>Guevara Silva</i>
+    </h1>
+    <div class="hero-divider"></div>
+    <p class="hero-quote" data-t="hero-quote">«La música es el refugio de las almas heridas por la felicidad.»<br><span class="hero-cite">— Emil Cioran</span></p>
+  </div>
+  
+  <div class="scroll-prompt">
+    <span class="scroll-text" data-t="scroll">Continuar</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════ BIOGRAPHY ═══════════ -->
+<section id="biography">
+  <div class="section-container">
+    <div class="bio-grid">
+      
+      <!-- Portrait -->
+      <div class="portrait-section">
+        <div class="portrait-frame">
+          <img src="samuel-guevara-silva-biografia.jpg" alt="Samuel Guevara Silva, guitarrista clásico colombiano — retrato de biografía" width="380" height="507" decoding="async" loading="eager" fetchpriority="high" class="portrait-img">
+          <div class="corner-mark corner-tl"></div>
+          <div class="corner-mark corner-tr"></div>
+          <div class="corner-mark corner-bl"></div>
+          <div class="corner-mark corner-br"></div>
+        </div>
+        <p class="portrait-credit" data-t="portrait-credit">Samuel Guevara Silva · Bogotá, 2024</p>
+      </div>
+      
+      <!-- Text Content -->
+      <div class="bio-content">
+        <p class="section-label" data-t="bio-label">I — Biografía</p>
+        <h2 class="section-title" data-t="bio-title">Escuchar antes que <i>tocar</i></h2>
+        
+        <div class="bio-text">
+          <p data-t="bio-p1">Samuel Guevara Silva es un guitarrista colombiano que inició sus estudios musicales con su padre, Absalón Guevara Díaz, quien le transmitió los fundamentos del instrumento y del lenguaje musical. Posteriormente, ingresó al Programa Básico de Estudios Musicales de la Universidad Nacional de Colombia en la cátedra de la maestra Sonia Díaz Salas, discípula directa de María Luisa Anido.</p>
+          <p data-t="bio-p2">Más adelante, continuó su formación con Alexander Parra, alumno de Gentil Montaña, fortaleciendo su técnica y sensibilidad interpretativa. Asimismo, ha asistido a conversatorios con referentes como Álvaro Toscano y Manuel Espinas, enfocados en la preparación mental y técnica del músico.</p>
+          <p data-t="bio-p3">En el ámbito competitivo, resultó ganador del concurso FestiU 2025 y fue becado para el FestiU 2026, un festival realizado en la Universidad de los Andes por una organización externa. Asimismo, en 2026 logró ser becado para el próximo festival que se realizará en 2027.</p>
+        </div>
+        
+        <div class="bio-stats">
+          <div>
+            <p class="stat-label" data-t="stat-origin">Origen</p>
+            <p class="stat-value">Colombia</p>
+          </div>
+          <div>
+            <p class="stat-label" data-t="stat-training">Formación</p>
+            <p class="stat-value" data-t="stat-training-val">Conservatorio Nacional</p>
+          </div>
+          <div>
+            <p class="stat-label" data-t="stat-award">Reconocimiento</p>
+            <p class="stat-value" data-t="stat-award-val">Ganador Concurso FestiU</p>
+          </div>
+          <div>
+            <p class="stat-label" data-t="stat-concerts">Conciertos</p>
+            <p class="stat-value">5 <span style="font-size:0.85rem;color:var(--text-dim);" data-t="stat-concerts-sub">en Colombia</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WORKS ═══════════ -->
+<section id="works">
+  <div class="section-container">
+    <p class="section-label" data-t="works-label">II — Obras</p>
+    <h2 class="section-title" data-t="works-title">Mis <i>trabajos</i></h2>
+    
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="works-carousel">
+        
+        <div class="work-card">
+          <p class="work-number">Op. 1</p>
+          <h3 class="work-title" data-t="work1-title">Cinco Días Lluviosos</h3>
+          <p class="work-composer" data-t="work1-composer">Suite para guitarra sola</p>
+          <p class="work-description" data-t="work1-desc">Una suite en cinco movimientos que explora los distintos estados de ánimo que provoca la lluvia: desde la melancolía silenciosa hasta la agitación de una tormenta. Cada pieza es un paisaje emocional distinto bajo el mismo cielo gris.</p>
+        </div>
+        
+        <div class="work-card">
+          <p class="work-number">Op. 2</p>
+          <h3 class="work-title" data-t="work2-title">Danzas Colombianas</h3>
+          <p class="work-composer" data-t="work2-composer">Para guitarra sola</p>
+          <p class="work-description" data-t="work2-desc">Inspirada en la escritura de Alberto Ginastera, esta obra combina danzas colombianas tradicionales —bambuco, pasillo, torbellino— con elementos de atonalidad y ritmo asimétrico. Un diálogo entre raíz e innovación.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="carousel-controls">
+      <button class="carousel-btn" onclick="slideCarousel('works-carousel', -1)">←</button>
+      <button class="carousel-btn" onclick="slideCarousel('works-carousel', 1)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY ═══════════ -->
+<section id="gallery">
+  <div class="section-container">
+    <p class="section-label" data-t="gallery-label">III — Galería</p>
+    <h2 class="section-title" data-t="gallery-title">Fotografías <i>y momentos</i></h2>
+    
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="gallery-carousel" style="gap:1.2rem;">
+        
+        <div class="gallery-item">
+          <img src="galeria-la-cajita-universidad-andes-2025.jpg" alt="Samuel Guevara Silva en concierto La Cajita, Universidad de los Andes 2025" width="360" height="480" decoding="async" loading="lazy">
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal1">La Cajita · Universidad de los Andes 2025</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="galeria-fotografia-artistica-1.png" alt="Samuel Guevara Silva — fotografía artística 2024" width="360" height="480" decoding="async" loading="lazy">
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal2">Fotografía artística · 2024</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="galeria-fotografia-artistica-2.png" alt="Samuel Guevara Silva — fotografía artística en estudio 2024" width="360" height="480" decoding="async" loading="lazy">
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal3">Fotografía artística · 2024</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-placeholder">♬</div>
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal4"></p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-placeholder">♪</div>
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal5"></p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-placeholder">♫</div>
+          <div class="gallery-overlay">
+            <p class="gallery-label" data-t="gal6"></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="carousel-controls">
+      <button class="carousel-btn" onclick="slideCarousel('gallery-carousel', -1)">←</button>
+      <button class="carousel-btn" onclick="slideCarousel('gallery-carousel', 1)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ INTERPRETATIONS ═══════════ -->
+<section id="interpretations">
+  <div class="section-container">
+    
+    <div class="interp-header">
+      <div>
+        <p class="section-label" data-t="interp-label">IV — Interpretaciones</p>
+        <h2 class="section-title" style="margin-bottom:0;" data-t="interp-title">La voz en <i>video</i></h2>
+      </div>
+      <a href="#" class="spotify-link" onclick="openSpotifyModal(event)">
+        <span class="spotify-icon" aria-hidden="true">
+          <img src="data:image/png;base64,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" alt="Spotify">
+        </span>
+        <span data-t="spotify-btn">Escuchar en Spotify</span>
+      </a>
+    </div>
+    
+    <div class="carousel-wrapper carousel-wrapper--single">
+      <div class="carousel-track" id="video-carousel">
+        
+        <div class="video-card">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/tJBty2QXm_w?rel=0&modestbranding=1"
+              title="para Emmie cajica colombia 2025"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-details">
+            <h3 class="video-title" data-t="vid1-title">para Emmie cajica colombia 2025</h3>
+            <p class="video-date" data-t="vid1-composer">Obra de Samuel Guevara Silva</p>
+            <p class="video-date" data-t="vid1-date">Cajicá, Colombia · 2025</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ UPCOMING EVENTS ═══════════ -->
+<section id="events">
+  <div class="section-container">
+    <p class="section-label" data-t="events-label">V — Próximas Apariciones</p>
+    <h2 class="section-title" data-t="events-title">En <i>escena</i></h2>
+    
+    <div class="events-list">
+      
+      <div class="event-row">
+        <div class="event-date">
+          <div class="event-day">08</div>
+          <div class="event-month" data-t="month-may">May 2025</div>
+        </div>
+        <div>
+          <div class="event-title" data-t="event1-title">Concierto FestiU — La Cajita</div>
+          <div class="event-venue" data-t="event1-venue">La Cajita · Universidad de los Andes</div>
+        </div>
+        <div class="event-location">Bogotá, Colombia</div>
+        <a href="#contact" class="event-link" data-t="info">Info</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact">
+  <div class="section-container">
+    <p class="section-label" data-t="contact-label">VI — Contacto</p>
+    <h2 class="section-title" data-t="contact-title">Una <i>conversación</i><br>comienza aquí</h2>
+    
+    <div class="contact-wrapper">
+      
+      <div>
+        <p class="contact-intro" data-t="contact-intro">Para conciertos, prensa, colaboraciones artísticas o cualquier consulta — estoy aquí. La música nace del encuentro y este es uno.</p>
+        
+        <div class="contact-list">
+          <div>
+            <p class="contact-item-label" data-t="contact-email-label">Correo Electrónico</p>
+            <a href="mailto:samuel@guevarasilva.com" class="contact-item-value">samuel@guevarasilva.com</a>
+          </div>
+          <div>
+            <p class="contact-item-label" data-t="contact-mgmt-label">Management</p>
+            <a href="mailto:management@guevarasilva.com" class="contact-item-value">management@guevarasilva.com</a>
+          </div>
+          <div>
+            <p class="contact-item-label" data-t="contact-press-label">Prensa</p>
+            <a href="mailto:prensa@guevarasilva.com" class="contact-item-value">prensa@guevarasilva.com</a>
+          </div>
+          <div>
+            <p class="contact-item-label" data-t="contact-base-label">Base</p>
+            <p class="contact-item-value" data-t="contact-base-val">Bogotá, Colombia · disponible para gira internacional</p>
+          </div>
+        </div>
+      </div>
+      
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label data-t="form-name">Nombre Completo</label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label data-t="form-email">Correo Electrónico</label>
+          <input type="email" required>
+        </div>
+        <div class="form-group">
+          <label data-t="form-subject">Motivo del Contacto</label>
+          <select>
+            <option value="" data-t="form-subject-select">— Seleccionar —</option>
+            <option value="booking" data-t="form-subject-booking">Contratación / Booking</option>
+            <option value="press" data-t="form-subject-press">Prensa</option>
+            <option value="collab" data-t="form-subject-collab">Colaboración Artística</option>
+            <option value="masterclass" data-t="form-subject-mc">Masterclass</option>
+            <option value="other" data-t="form-subject-other">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-t="form-message">Mensaje</label>
+          <textarea required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          <span data-t="form-submit">Enviar Mensaje</span>
+          <span>→</span>
+        </button>
+      </form>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="section-container">
+    <div class="footer-content">
+      <a href="#hero" class="footer-brand">Samuel Guevara Silva</a>
+      <p class="footer-credit" data-t="footer-credit">© 2025 Samuel Guevara Silva · Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/samuel.guevara.silva/" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+        <a href="https://www.youtube.com/@SamuelGS-v2b" target="_blank" rel="noopener" class="footer-link">YouTube</a>
+        <a href="#" class="footer-link" onclick="openSpotifyModal(event)">Spotify</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════ SPOTIFY MODAL ═══════════ -->
+<div class="modal-backdrop" id="spotifyModal">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeSpotifyModal()">✕ Cerrar</button>
+    <h3 class="modal-title" data-t="spotify-title">Samuel Guevara Silva</h3>
+    <p class="modal-subtitle" data-t="spotify-subtitle">Grabaciones y selecciones de concierto disponibles en Spotify.</p>
+    <div style="border-radius:2px;overflow:hidden;">
+      <iframe style="border-radius:0;"
+        src="https://open.spotify.com/embed/artist/4Z8W4fKeB5YxbusRsdQVPb?utm_source=generator&theme=0"
+        width="100%" height="340" frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+
+/* ─── TRANSLATIONS ─── */
+const translations = {
+  es: {
+    'hero-tag': 'Guitarra Clásica · Colombia',
+    'hero-quote': '«La música es el refugio de las almas heridas por la felicidad.»<br><span class="hero-cite">— Emil Cioran</span>',
+    'scroll': 'Continuar',
+    'bio-label': 'I — Biografía',
+    'bio-title': 'Escuchar antes que tocar',
+    'portrait-credit': 'Samuel Guevara Silva · Bogotá, 2024',
+    'bio-p1': 'Samuel Guevara Silva es un guitarrista colombiano que inició sus estudios musicales con su padre, Absalón Guevara Díaz, quien le transmitió los fundamentos del instrumento y del lenguaje musical. Posteriormente, ingresó al Programa Básico de Estudios Musicales de la Universidad Nacional de Colombia en la cátedra de la maestra Sonia Díaz Salas, discípula directa de María Luisa Anido.',
+    'bio-p2': 'Más adelante, continuó su formación con Alexander Parra, alumno de Gentil Montaña, fortaleciendo su técnica y sensibilidad interpretativa. Asimismo, ha asistido a conversatorios con referentes como Álvaro Toscano y Manuel Espinas, enfocados en la preparación mental y técnica del músico.',
+    'bio-p3': 'En el ámbito competitivo, resultó ganador del concurso FestiU 2025 y fue becado para el FestiU 2026, un festival realizado en la Universidad de los Andes por una organización externa. Asimismo, en 2026 logró ser becado para el próximo festival que se realizará en 2027.',
+    'stat-origin': 'Origen',
+    'stat-training': 'Formación',
+    'stat-training-val': 'Conservatorio Nacional',
+    'stat-award': 'Reconocimiento',
+    'stat-award-val': 'Ganador Concurso FestiU',
+    'stat-concerts': 'Conciertos',
+    'stat-concerts-sub': 'en Colombia',
+    'works-label': 'II — Obras',
+    'works-title': 'Mis trabajos',
+    'work1-title': 'Cinco Días Lluviosos',
+    'work1-desc': 'Una suite en cinco movimientos que explora los distintos estados de ánimo que provoca la lluvia: desde la melancolía silenciosa hasta la agitación de una tormenta. Cada pieza es un paisaje emocional distinto bajo el mismo cielo gris.',
+    'work2-title': 'Danzas Colombianas',
+    'work2-desc': 'Inspirada en la escritura de Alberto Ginastera, esta obra combina danzas colombianas tradicionales —bambuco, pasillo, torbellino— con elementos de atonalidad y ritmo asimétrico. Un diálogo entre raíz e innovación.',
+    'work3-title': 'Chaconne en Re menor',
+    'work3-desc': 'Quince minutos en los que Bach resume todo lo que sabe sobre la pérdida y la regeneración. Tocada en guitarra, pierde el arco pero gana una intimidad que el violín no puede dar.',
+    'work4-title': 'Gran Sonata Op. 22',
+    'work4-desc': 'La forma sonata llevada a la guitarra con rigor y sin rigidez. Sor entendió que el orden puede ser también una forma de libertad. Samuel también lo entiende.',
+    'work5-title': 'Danzas Colombianas',
+    'work5-composer': 'Composición propia',
+    'work5-desc': 'Bambuco, torbellino, pasillo. Las músicas de la infancia revisitadas desde la técnica académica sin que pierdan su olor a tierra. Cinco piezas que son un mapa de lo que Samuel quiere decir.',
+    'work6-title': 'Concierto de Aranjuez',
+    'work6-desc': 'El Adagio es una de esas músicas que el mundo ya conoce de memoria. Por eso interpretarlo exige más, no menos. Samuel lo toca como si lo supiera de primera vez.',
+    'gallery-label': 'III — Galería',
+    'gallery-title': 'Fotografías y momentos',
+    'gal1': 'La Cajita · Universidad de los Andes 2025',
+    'gal2': 'Fotografía artística · 2024',
+    'gal3': 'Fotografía artística · 2024',
+    'gal4': '',
+    'gal5': '',
+    'gal6': '',
+    'interp-label': 'IV — Interpretaciones',
+    'interp-title': 'La voz en video',
+    'spotify-btn': 'Escuchar en Spotify',
+    'vid1-title': 'para Emmie cajica colombia 2025',
+    'vid1-composer': 'Obra de Samuel Guevara Silva',
+    'vid1-date': 'Cajicá, Colombia · 2025',
+    'events-label': 'V — Próximas Apariciones',
+    'events-title': 'En escena',
+    'month-may': 'May 2025',
+    'month-jul': 'Jul 2025',
+    'month-aug': 'Ago 2025',
+    'month-oct': 'Oct 2025',
+    'month-nov': 'Nov 2025',
+    'event1-title': 'Concierto FestiU — La Cajita',
+    'event1-venue': 'La Cajita · Universidad de los Andes',
+    'event2-title': 'Festival Internacional de Guitarra',
+    'event2-venue': 'Sala de Conciertos del Conservatorio',
+    'event3-title': 'Concierto con Orquesta Sinfónica',
+    'event3-venue': 'Auditorio Nacional · Concierto de Aranjuez',
+    'event4-title': 'Gira Europea — Debut en Madrid',
+    'event4-venue': 'Sala Fundación Juan March',
+    'event5-title': 'Masterclass Internacional de Guitarra',
+    'event5-venue': 'Escuela Superior de Música Reina Sofía',
+    'tickets': 'Entradas',
+    'info': 'Info',
+    'contact-label': 'VI — Contacto',
+    'contact-title': 'Una conversación comienza aquí',
+    'contact-intro': 'Para conciertos, prensa, colaboraciones artísticas o consultas profesionales.',
+    'contact-email-label': 'Correo Electrónico',
+    'contact-mgmt-label': 'Management',
+    'contact-press-label': 'Prensa',
+    'contact-base-label': 'Base',
+    'contact-base-val': 'Bogotá, Colombia · disponible para gira internacional',
+    'form-name': 'Nombre Completo',
+    'form-email': 'Correo Electrónico',
+    'form-subject': 'Motivo del Contacto',
+    'form-subject-select': '— Seleccionar —',
+    'form-subject-booking': 'Contratación / Booking',
+    'form-subject-press': 'Prensa',
+    'form-subject-collab': 'Colaboración Artística',
+    'form-subject-mc': 'Masterclass',
+    'form-subject-other': 'Otro',
+    'form-message': 'Mensaje',
+    'form-submit': 'Enviar Mensaje',
+    'footer-credit': '© 2025 Samuel Guevara Silva · Todos los derechos reservados',
+    'spotify-title': 'Samuel Guevara Silva en Spotify',
+    'spotify-subtitle': 'Grabaciones y selecciones de concierto disponibles en Spotify.',
+  },
+  en: {
+    'hero-tag': 'Classical Guitar · Colombia',
+    'hero-quote': '«Music is the refuge of souls wounded by happiness.»<br><span class="hero-cite">— Emil Cioran</span>',
+    'scroll': 'Continue',
+    'bio-label': 'I — Biography',
+    'bio-title': 'Listen before you play',
+    'portrait-credit': 'Samuel Guevara Silva · Bogotá, 2024',
+    'bio-p1': 'Samuel Guevara Silva is a Colombian guitarist who began his musical studies with his father, Absalón Guevara Díaz, who transmitted to him the fundamentals of the instrument and musical language. He later joined the Basic Music Studies Program at the National University of Colombia under maestro Sonia Díaz Salas, a direct disciple of María Luisa Anido.',
+    'bio-p2': 'He continued his training with Alexander Parra, a student of Gentil Montaña, strengthening his technique and interpretative sensitivity. He has also attended talks with notable figures such as Álvaro Toscano and Manuel Espinas, focused on the mental and technical preparation of the musician.',
+    'bio-p3': 'In the competitive arena, he won the FestiU 2025 competition and was awarded a scholarship for FestiU 2026, a festival held at Universidad de los Andes by an external organization. Additionally, in 2026 he was awarded a scholarship for the next festival to be held in 2027.',
+    'stat-origin': 'Origin',
+    'stat-training': 'Training',
+    'stat-training-val': 'National Conservatory',
+    'stat-award': 'Recognition',
+    'stat-award-val': 'FestiU Competition Winner',
+    'stat-concerts': 'Concerts',
+    'stat-concerts-sub': 'in Colombia',
+    'works-label': 'II — Works',
+    'works-title': 'My works',
+    'work1-title': 'Cinco Días Lluviosos',
+    'work1-desc': 'A five-movement suite exploring the different moods evoked by rain: from silent melancholy to the agitation of a storm. Each piece is a distinct emotional landscape under the same gray sky.',
+    'work2-title': 'Danzas Colombianas',
+    'work2-desc': 'Inspired by Alberto Ginastera\'s writing, this work combines traditional Colombian dances —bambuco, pasillo, torbellino— with elements of atonality and asymmetric rhythm. A dialogue between roots and innovation.',
+    'work3-title': 'Chaconne in D minor',
+    'work3-desc': 'Fifteen minutes where Bach distills all he knows about loss and regeneration. Played on guitar, it loses the bow but gains an intimacy the violin cannot give.',
+    'work4-title': 'Grand Sonata Op. 22',
+    'work4-desc': 'Sonata form brought to the guitar with rigor and without rigidity. Sor understood that order can also be a form of freedom. So does Samuel.',
+    'work5-title': 'Colombian Dances',
+    'work5-composer': 'Original composition',
+    'work5-desc': 'Bambuco, torbellino, pasillo. Childhood music revisited through academic technique without losing its smell of earth. Five pieces that map what Samuel wants to say.',
+    'work6-title': 'Concierto de Aranjuez',
+    'work6-desc': 'The Adagio is music the world already knows by heart. That\'s exactly why performing it demands more, not less. Samuel plays it as if hearing it for the first time.',
+    'gallery-label': 'III — Gallery',
+    'gallery-title': 'Photos and moments',
+    'gal1': 'La Cajita · Universidad de los Andes 2025',
+    'gal2': 'Artistic Photography · 2024',
+    'gal3': 'Fotografía artística · 2024',
+    'gal4': '',
+    'gal5': '',
+    'gal6': '',
+    'interp-label': 'IV — Performances',
+    'interp-title': 'The voice on video',
+    'spotify-btn': 'Listen on Spotify',
+    'vid1-title': 'para Emmie cajica colombia 2025',
+    'vid1-composer': 'Work by Samuel Guevara Silva',
+    'vid1-date': 'Cajicá, Colombia · 2025',
+    'events-label': 'V — Upcoming Appearances',
+    'events-title': 'On stage',
+    'month-may': 'May 2025',
+    'month-jul': 'Jul 2025',
+    'month-aug': 'Aug 2025',
+    'month-oct': 'Oct 2025',
+    'month-nov': 'Nov 2025',
+    'event1-title': 'FestiU Concert — La Cajita',
+    'event1-venue': 'Teatro Colón — Grand Hall',
+    'event2-title': 'International Guitar Festival',
+    'event2-venue': 'Conservatory Concert Hall',
+    'event3-title': 'Concert with Symphony Orchestra',
+    'event3-venue': 'National Auditorium · Concierto de Aranjuez',
+    'event4-title': 'European Tour — Madrid Debut',
+    'event4-venue': 'Sala Fundación Juan March',
+    'event5-title': 'International Guitar Masterclass',
+    'event5-venue': 'Escuela Superior de Música Reina Sofía',
+    'tickets': 'Tickets',
+    'info': 'Info',
+    'contact-label': 'VI — Contact',
+    'contact-title': 'A conversation begins here',
+    'contact-intro': 'For concerts, press, artistic collaborations, or professional inquiries.',
+    'contact-email-label': 'Email',
+    'contact-mgmt-label': 'Management',
+    'contact-press-label': 'Press',
+    'contact-base-label': 'Base',
+    'contact-base-val': 'Bogotá, Colombia · available for international tours',
+    'form-name': 'Full Name',
+    'form-email': 'Email Address',
+    'form-subject': 'Subject',
+    'form-subject-select': '— Select —',
+    'form-subject-booking': 'Booking',
+    'form-subject-press': 'Press',
+    'form-subject-collab': 'Artistic Collaboration',
+    'form-subject-mc': 'Masterclass',
+    'form-subject-other': 'Other',
+    'form-message': 'Message',
+    'form-submit': 'Send Message',
+    'footer-credit': '© 2025 Samuel Guevara Silva · All rights reserved',
+    'spotify-title': 'Samuel Guevara Silva on Spotify',
+    'spotify-subtitle': 'Recordings and concert selections available on Spotify.',
+  },
+  fr: {
+    'hero-tag': 'Guitare Classique · Colombie',
+    'hero-quote': '«La musique est le refuge des âmes blessées par le bonheur.»<br><span class="hero-cite">— Emil Cioran</span>',
+    'scroll': 'Continuer',
+    'bio-label': 'I — Biographie',
+    'bio-title': 'Écouter avant de jouer',
+    'portrait-credit': 'Samuel Guevara Silva · Bogotá, 2024',
+    'bio-p1': 'Samuel Guevara Silva est un guitariste colombien qui a débuté ses études musicales avec son père, Absalón Guevara Díaz, qui lui a transmis les fondamentaux de l\'instrument et du langage musical. Il a ensuite rejoint le Programme d\'Études Musicales de Base de l\'Université Nationale de Colombie dans la classe de la maestra Sonia Díaz Salas, disciple directe de María Luisa Anido.',
+    'bio-p2': 'Il a poursuivi sa formation avec Alexander Parra, élève de Gentil Montaña, renforçant sa technique et sa sensibilité interprétative. Il a également assisté à des conférences avec des référents tels qu\'Álvaro Toscano et Manuel Espinas, axées sur la préparation mentale et technique du musicien.',
+    'bio-p3': 'Dans le domaine compétitif, il a remporté le concours FestiU 2025 et a obtenu une bourse pour le FestiU 2026, un festival organisé à l\'Université des Andes par une organisation externe. De même, en 2026, il a obtenu une bourse pour le prochain festival qui aura lieu en 2027.',
+    'stat-origin': 'Origine',
+    'stat-training': 'Formation',
+    'stat-training-val': 'Conservatoire National',
+    'stat-award': 'Distinction',
+    'stat-award-val': 'Prix National de Guitare',
+    'stat-concerts': 'Concerts',
+    'stat-concerts-sub': 'en Colombie',
+    'works-label': 'II — Œuvres',
+    'works-title': 'Mes travaux',
+    'work1-title': 'Cinco Días Lluviosos',
+    'work1-desc': 'Une suite en cinq mouvements qui explore les différentes humeurs évoquées par la pluie : de la mélancolie silencieuse à l\'agitation d\'une tempête. Chaque pièce est un paysage émotionnel distinct sous le même ciel gris.',
+    'work2-title': 'Danzas Colombianas',
+    'work2-desc': 'Inspirée par l\'écriture d\'Alberto Ginastera, cette œuvre combine des danses colombiennes traditionnelles —bambuco, pasillo, torbellino— avec des éléments d\'atonalité et de rythme asymétrique. Un dialogue entre racines et innovation.',
+    'work3-title': 'Chaconne en ré mineur',
+    'work3-desc': 'Quinze minutes où Bach résume tout ce qu\'il sait sur la perte et la régénération. Jouée à la guitare, elle perd l\'archet mais gagne une intimité que le violon ne peut donner.',
+    'work4-title': 'Grande Sonate Op. 22',
+    'work4-desc': 'La forme sonate portée à la guitare avec rigueur et sans rigidité. Sor comprit que l\'ordre peut aussi être une forme de liberté. Samuel aussi.',
+    'work5-title': 'Danses Colombiennes',
+    'work5-composer': 'Composition originale',
+    'work5-desc': 'Bambuco, torbellino, pasillo. Les musiques de l\'enfance revisitées par la technique académique sans perdre leur odeur de terre. Cinq pièces qui cartographient ce que Samuel veut dire.',
+    'work6-title': 'Concierto de Aranjuez',
+    'work6-desc': 'L\'Adagio est une musique que le monde connaît déjà par cœur. C\'est pourquoi l\'interpréter exige plus, pas moins. Samuel le joue comme s\'il l\'entendait pour la première fois.',
+    'gallery-label': 'III — Galerie',
+    'gallery-title': 'Photos et moments',
+    'gal1': 'La Cajita · Universidad de los Andes 2025',
+    'gal2': 'Photo artistique · 2024',
+    'gal3': 'Fotografía artística · 2024',
+    'gal4': '',
+    'gal5': '',
+    'gal6': '',
+    'interp-label': 'IV — Interprétations',
+    'interp-title': 'La voix en vidéo',
+    'spotify-btn': 'Écouter sur Spotify',
+    'vid1-title': 'para Emmie cajica colombia 2025',
+    'vid1-composer': 'Œuvre de Samuel Guevara Silva',
+    'vid1-date': 'Cajicá, Colombie · 2025',
+    'events-label': 'V — Prochaines Apparitions',
+    'events-title': 'Sur scène',
+    'month-may': 'Mai 2025',
+    'month-jul': 'Juill 2025',
+    'month-aug': 'Août 2025',
+    'month-oct': 'Oct 2025',
+    'month-nov': 'Nov 2025',
+    'event1-title': 'Concert FestiU — La Cajita',
+    'event1-venue': 'La Cajita · Universidad de los Andes',
+    'DISABLED2-title': 'Festival International de Guitare',
+    'event2-venue': 'Salle de Concerts du Conservatoire',
+    'event3-title': 'Concert avec Orchestre Symphonique',
+    'event3-venue': 'Auditorium National · Concierto de Aranjuez',
+    'event4-title': 'Tournée Européenne — Début à Madrid',
+    'event4-venue': 'Sala Fundación Juan March',
+    'event5-title': 'Masterclass Internationale de Guitare',
+    'event5-venue': 'Escuela Superior de Música Reina Sofía',
+    'tickets': 'Billets',
+    'info': 'Info',
+    'contact-label': 'VI — Contact',
+    'contact-title': 'Une conversation commence ici',
+    'contact-intro': 'Pour les concerts, la presse, les collaborations artistiques ou les demandes professionnelles.',
+    'contact-email-label': 'Courriel',
+    'contact-mgmt-label': 'Management',
+    'contact-press-label': 'Presse',
+    'contact-base-label': 'Base',
+    'contact-base-val': 'Bogotá, Colombie · disponible pour tournées internationales',
+    'form-name': 'Nom Complet',
+    'form-email': 'Adresse Courriel',
+    'form-subject': 'Objet du Contact',
+    'form-subject-select': '— Sélectionner —',
+    'form-subject-booking': 'Booking',
+    'form-subject-press': 'Presse',
+    'form-subject-collab': 'Collaboration Artistique',
+    'form-subject-mc': 'Masterclass',
+    'form-subject-other': 'Autre',
+    'form-message': 'Message',
+    'form-submit': 'Envoyer le Message',
+    'footer-credit': '© 2025 Samuel Guevara Silva · Tous droits réservés',
+    'spotify-title': 'Samuel Guevara Silva sur Spotify',
+    'spotify-subtitle': 'Enregistrements et sélections de concert disponibles sur Spotify.',
+  },
+  zh: {
+    'hero-tag': '古典吉他 · 哥伦比亚',
+    'hero-quote': '«音乐是被幸福所伤的灵魂的庇护所。»<br><span class="hero-cite">— Emil Cioran</span>',
+    'scroll': '继续',
+    'bio-label': '一 — 传记',
+    'bio-title': '先倾听，再演奏',
+    'portrait-credit': 'Samuel Guevara Silva · 波哥大，2024',
+    'bio-p1': '萨穆埃尔·格瓦拉·席尔瓦是一位哥伦比亚吉他手，他的音乐学习始于父亲阿布萨隆·格瓦拉·迪亚斯，父亲向他传授了乐器和音乐语言的基础。后来，他进入哥伦比亚国立大学音乐基础学习项目，师从索尼亚·迪亚斯·萨拉斯大师，她是玛丽亚·路易莎·阿尼多的直传弟子。',
+    'bio-p2': '他继续跟随亚历山大·帕拉学习，后者是亨蒂尔·蒙塔尼亚的学生，加强了他的技术和演绎敏感性。他还参加了阿尔瓦罗·托斯卡诺和曼努埃尔·埃斯皮纳斯等知名人士的讲座，专注于音乐家的心理和技术准备。',
+    'bio-p3': '在竞赛领域，他赢得了2025年FestiU比赛，并获得2026年FestiU奖学金，这是由外部组织在安第斯大学举办的音乐节。此外，2026年他还获得了将于2027年举办的下一届音乐节的奖学金。',
+    'stat-origin': '出生地',
+    'stat-training': '培训',
+    'stat-training-val': '国立音乐学院',
+    'stat-award': '荣誉',
+    'stat-award-val': '国家吉他奖',
+    'stat-concerts': '音乐会',
+    'stat-concerts-sub': '在哥伦比亚',
+    'works-label': '二 — 作品',
+    'works-title': '我的作品',
+    'work1-title': '五个雨天',
+    'work1-desc': '一部由五个乐章组成的组曲，探索雨所引发的不同情绪：从沉默的忧郁到暴风雨的激荡。每首作品都是同一片灰色天空下不同的情感风景。',
+    'work2-title': '哥伦比亚舞曲',
+    'work2-desc': '受阿尔贝托·希纳斯特拉写作风格的启发，这部作品将传统哥伦比亚舞蹈——班布科、帕西罗、托尔贝利诺——与无调性元素和不对称节奏相结合。根基与创新之间的对话。',
+    'work3-title': '恰空舞曲 D小调',
+    'work3-desc': '十五分钟，巴赫将他所知道的关于失去与再生的一切浓缩其中。用吉他演奏，失去了弓，却获得了小提琴无法给予的亲密。',
+    'work4-title': '大奏鸣曲 Op. 22',
+    'work4-desc': '奏鸣曲式以严谨而不僵化的方式带入吉他。索尔明白秩序也可以是一种自由的形式。萨穆埃尔也明白。',
+    'work5-title': '哥伦比亚舞曲',
+    'work5-composer': '原创作品',
+    'work5-desc': '竹库、托尔贝利诺、帕西罗。以学院技法重访童年的音乐，却不让它们失去泥土的气息。',
+    'work6-title': '阿兰胡埃斯协奏曲',
+    'work6-desc': '这段慢板是世界早已烂熟于心的音乐。正因如此，诠释它需要更多，而非更少。萨穆埃尔演奏它，仿佛第一次听到。',
+    'gallery-label': '三 — 画廊',
+    'gallery-title': '照片与时刻',
+    'gal1': 'La Cajita · 安第斯大学 2025',
+    'gal2': '艺术摄影 · 2024',
+    'gal3': '艺术摄影 · 2024',
+    'gal4': '',
+    'gal5': '',
+    'gal6': '',
+    'interp-label': '四 — 演奏',
+    'interp-title': '视频中的声音',
+    'spotify-btn': '在Spotify上收听',
+    'vid1-title': 'para Emmie cajica colombia 2025',
+    'vid1-composer': 'Samuel Guevara Silva 的作品',
+    'vid1-date': 'Cajicá，哥伦比亚 · 2025',
+    'events-label': '五 — 近期演出',
+    'events-title': '登台',
+    'month-may': '2025年5月',
+    'month-jul': '2025年7月',
+    'month-aug': '2025年8月',
+    'month-oct': '2025年10月',
+    'month-nov': '2025年11月',
+    'event1-title': 'FestiU音乐会 — La Cajita',
+    'event1-venue': '科隆剧院 — 大厅',
+    'event2-title': '国际吉他节',
+    'event2-venue': '音乐学院音乐厅',
+    'event3-title': '与交响乐团协奏',
+    'event3-venue': '国家礼堂 · 阿兰胡埃斯协奏曲',
+    'event4-title': '欧洲巡演 — 马德里首演',
+    'event4-venue': '胡安·马尔奇基金会厅',
+    'event5-title': '国际吉他大师班',
+    'event5-venue': '索菲亚王后高等音乐学院',
+    'tickets': '购票',
+    'info': '信息',
+    'contact-label': '六 — 联系',
+    'contact-title': '一段对话从这里开始',
+    'contact-intro': '如需演出预约、媒体合作、艺术合作或专业咨询。',
+    'contact-email-label': '邮箱',
+    'contact-mgmt-label': '经纪',
+    'contact-press-label': '媒体',
+    'contact-base-label': '驻地',
+    'contact-base-val': '波哥大，哥伦比亚 · 可参与国际演出',
+    'form-name': '全名',
+    'form-email': '邮箱地址',
+    'form-subject': '联系事由',
+    'form-subject-select': '— 请选择 —',
+    'form-subject-booking': '演出预约',
+    'form-subject-press': '媒体',
+    'form-subject-collab': '艺术合作',
+    'form-subject-mc': '大师班',
+    'form-subject-other': '其他',
+    'form-message': '留言',
+    'form-submit': '发送消息',
+    'footer-credit': '© 2025 Samuel Guevara Silva · 版权所有',
+    'spotify-title': 'Samuel Guevara Silva 的 Spotify',
+    'spotify-subtitle': '录音和音乐会精选可在 Spotify 上收听。',
+  },
+};
+
+let currentLang = 'es';
+
+function switchLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.lang-btn[onclick="switchLang('${lang}')"]`).classList.add('active');
+  
+  const t = translations[lang];
+  document.querySelectorAll('[data-t]').forEach(el => {
+    if (t[el.dataset.t]) {
+      el.innerHTML = t[el.dataset.t];
+    }
+  });
+}
+
+/* ─── CUSTOM CURSOR ─── */
+const cursorEl = document.getElementById('cursor');
+
+// Solo activar el cursor personalizado en desktop (no en móviles/tablets)
+if (window.innerWidth > 768) {
+  document.addEventListener('mousemove', e => {
+    cursorEl.style.left = e.clientX + 'px';
+    cursorEl.style.top = e.clientY + 'px';
+  });
+
+  document.querySelectorAll('a, button, .work-card, .gallery-item, .carousel-btn').forEach(el => {
+    el.addEventListener('mouseenter', () => cursorEl.classList.add('active'));
+    el.addEventListener('mouseleave', () => cursorEl.classList.remove('active'));
+  });
+}
+
+/* ─── NAVIGATION SCROLL ─── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+/* ─── SCROLL ANIMATIONS ─── */
+const revealEls = document.querySelectorAll('.section-label, .section-title, .portrait-section, .bio-content');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealEls.forEach(el => revealObs.observe(el));
+
+/* ─── PARTICLE ANIMATION ─── */
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 15; i++) {
+  const particle = document.createElement('div');
+  particle.className = 'particle';
+  const size = Math.random() * 2 + 1;
+  const duration = 8 + Math.random() * 12;
+  const delay = Math.random() * 8;
+  const drift = (Math.random() - 0.5) * 80;
+  
+  particle.style.cssText = `
+    width: ${size}px;
+    height: ${size}px;
+    left: ${Math.random() * 100}%;
+    bottom: ${Math.random() * 40}%;
+    --duration: ${duration}s;
+    --drift: ${drift}px;
+  `;
+  particle.style.animationDelay = `${delay}s`;
+  particlesContainer.appendChild(particle);
+}
+
+/* ─── CAROUSELS ─── */
+const carouselState = {};
+
+function getCarouselMetrics(track, carouselId) {
+  const items = track.children;
+  if (!items.length) return null;
+  const itemWidth = items[0].offsetWidth;
+  const gap = carouselId === 'gallery-carousel' ? 19 : 32;
+  const step = itemWidth + gap;
+  const containerWidth = track.parentElement.offsetWidth;
+  const visibleItems = Math.max(1, Math.floor(containerWidth / step));
+  const maxOffset = Math.max(0, (items.length - visibleItems) * step);
+  return { step, maxOffset };
+}
+
+function setCarouselOffset(carouselId, offset, animate = true) {
+  const track = document.getElementById(carouselId);
+  const metrics = getCarouselMetrics(track, carouselId);
+  if (!metrics) return;
+  carouselState[carouselId] = Math.max(0, Math.min(offset, metrics.maxOffset));
+  track.style.transition = animate ? 'transform 0.45s cubic-bezier(0.4, 0, 0.2, 1)' : 'none';
+  track.style.transform = `translateX(-${carouselState[carouselId]}px)`;
+}
+
+function slideCarousel(carouselId, direction) {
+  const track = document.getElementById(carouselId);
+  const metrics = getCarouselMetrics(track, carouselId);
+  if (!metrics) return;
+  const current = carouselState[carouselId] || 0;
+  setCarouselOffset(carouselId, current + direction * metrics.step);
+}
+
+function snapCarousel(carouselId, startOffset, diff) {
+  const track = document.getElementById(carouselId);
+  const metrics = getCarouselMetrics(track, carouselId);
+  if (!metrics) return;
+  const { step, maxOffset } = metrics;
+  const threshold = step * 0.05;
+  let target = startOffset;
+
+  if (diff > threshold) {
+    target = startOffset + step;
+  } else if (diff < -threshold) {
+    target = startOffset - step;
+  }
+
+  const snapped = Math.round(target / step) * step;
+  carouselState[carouselId] = Math.max(0, Math.min(snapped, maxOffset));
+  setCarouselOffset(carouselId, carouselState[carouselId], true);
+}
+
+/* ─── TOUCH SUPPORT FOR CAROUSELS (deslizar poco = siguiente tarjeta) ─── */
+['works-carousel', 'gallery-carousel', 'video-carousel'].forEach(carouselId => {
+  const track = document.getElementById(carouselId);
+  if (!track || track.children.length <= 1) return;
+
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+  let startOffset = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].clientX;
+    currentX = startX;
+    startOffset = carouselState[carouselId] || 0;
+    track.style.transition = 'none';
+  }, { passive: true });
+
+  track.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+    const metrics = getCarouselMetrics(track, carouselId);
+    if (!metrics) return;
+    const clamped = Math.max(0, Math.min(startOffset + diff, metrics.maxOffset));
+    track.style.transform = `translateX(-${clamped}px)`;
+  }, { passive: true });
+
+  track.addEventListener('touchend', () => {
+    if (!isDragging) return;
+    isDragging = false;
+    const diff = startX - currentX;
+    snapCarousel(carouselId, startOffset, diff);
+  });
+});
+
+/* ─── SPOTIFY MODAL ─── */
+function openSpotifyModal(e) {
+  e.preventDefault();
+  document.getElementById('spotifyModal').classList.add('active');
+}
+
+function closeSpotifyModal() {
+  document.getElementById('spotifyModal').classList.remove('active');
+}
+
+document.getElementById('spotifyModal').addEventListener('click', function(e) {
+  if (e.target === this) closeSpotifyModal();
+});
+
+/* ─── FORM SUBMISSION ─── */
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.submit-btn span:first-child');
+  const originalText = btn.textContent;
+  btn.textContent = '✓';
+  setTimeout(() => {
+    btn.textContent = originalText;
+    e.target.reset();
+  }, 2500);
+}
+
+</script>
+</body>
+</html>
